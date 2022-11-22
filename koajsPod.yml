@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: koajs
+  labels:
+    name: koajs
+spec:
+  containers:
+  - name: evgeny1307/koajs:latest
+    image: nginx:alpine
+    ports:
+      - containerPort: 5000
+        name: koajs
+    volumeMounts:
+      - name: my-local-volume-mount
+        mountPath: /mnt/disk/pv1
+  volumes:
+    - name: my-local-pv
+      persistentVolumeClaim:
+        claimName: my-claim
