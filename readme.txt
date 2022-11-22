@@ -15,7 +15,7 @@ KOAJS app instruction for full installation and deployemnt
 	[docker images]
 
 5. Download 2 YAML files of deployment from my GITHUB repo (Deployment and Service-Loadbalancer):
-	https://github.com/Evgeny1307/midlink/tree/main
+	https://github.com/Evgeny1307/midlink2/tree/main
 
 6. Remember give the execute permissions for the following files:
 	[sudo chmod +x file1 file2]
